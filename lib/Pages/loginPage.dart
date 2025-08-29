@@ -23,7 +23,7 @@ class _LoginpageState extends State<Loginpage> {
     if (auth) {
       Navigator.pushReplacementNamed(
         context,
-        AppRoutes.home,
+        AppRoutes.dog,
         arguments: {'user': user},
       );
     } else {

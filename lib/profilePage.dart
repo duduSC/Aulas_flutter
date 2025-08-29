@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Pages/dogPage.dart';
 import 'package:flutter_application_1/Pages/loginPage.dart';
 
 class profilePage extends StatefulWidget {
@@ -19,7 +20,7 @@ class _profilePageState extends State<profilePage> {
       appBar: AppBar(
         backgroundColor:  Colors.black,
         leading: IconButton(onPressed: ()=>{Navigator.pop(context, 
-        MaterialPageRoute(builder: (context)=>Loginpage())
+        MaterialPageRoute(builder: (context)=>DogPage())
         )
         }, icon: Icon(Icons.home)
         ),
