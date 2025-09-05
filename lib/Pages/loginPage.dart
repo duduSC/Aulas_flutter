@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Pages/homePage.dart';
+import 'package:flutter_application_1/Pages/userListPage.dart';
+import 'package:flutter_application_1/Pages/userPage.dart';
 import 'package:flutter_application_1/Services/auth.dart';
 import 'package:flutter_application_1/profilePage.dart';
 import 'package:flutter_application_1/routes.dart';
@@ -23,7 +26,7 @@ class _LoginpageState extends State<Loginpage> {
     if (auth) {
       Navigator.pushReplacementNamed(
         context,
-        AppRoutes.dog,
+        AppRoutes.userList,
         arguments: {'user': user},
       );
     } else {
@@ -46,7 +49,7 @@ class _LoginpageState extends State<Loginpage> {
           onPressed: () => {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => profilePage()),
+              MaterialPageRoute(builder: (context) => Homepage()),
             ),
           },
           icon: Icon(Icons.output_outlined),
