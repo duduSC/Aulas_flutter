@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_application_1/Pages/homePage.dart';
 import 'package:flutter_application_1/Pages/userListPage.dart';
 import 'package:flutter_application_1/Pages/userPage.dart';
 import 'package:flutter_application_1/Services/auth.dart';
 import 'package:flutter_application_1/profilePage.dart';
 import 'package:flutter_application_1/routes.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Loginpage extends StatefulWidget {
   const Loginpage({super.key});
@@ -63,6 +65,9 @@ class _LoginpageState extends State<Loginpage> {
               constraints: const BoxConstraints(maxWidth: 420),
               child: Column(
                 children: [
+                  Text(
+                    "Bem vindo",style: TextStyle(fontFamily: "Font" ),
+                  ),
                   Form(
                     key: _formKey,
                     child: Column(

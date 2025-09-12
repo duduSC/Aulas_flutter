@@ -4,14 +4,13 @@ class User {
   final String email;
   final String picture;
   final String dogName;
-  final DateTime? birthDay;
+
   User({
     this.id,
     required this.name,
     required this.email,
     required this.dogName,
-    required this.picture,
-    this.birthDay,
+    required this.picture
   });
 
   factory User.fromJson(Map<String, dynamic> json) {
@@ -20,8 +19,7 @@ class User {
       name: json["name"] as String,
       email: json["email"] as String,
       dogName: json["dogName"] as String,
-      picture: json["picture"] as String,
-      birthDay: json["birthDay"] != null && json["birthDay"] != '' ? DateTime.tryParse(json['birthday']) : null
+      picture: json["picture"] as String
     );
   }
 
@@ -32,7 +30,6 @@ class User {
       "email": email,
       "dogName": dogName,
       "picture": picture,
-      "birthDay": birthDay?.toIso8601String(),
     };
   }
 }

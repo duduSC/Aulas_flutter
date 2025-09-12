@@ -17,7 +17,6 @@ class Userservice {
       ).toList();
       
     } else {
-      print("Erro interno, chama o dev");
       throw Exception("Falha ao carregar os dados do usuario ${response.statusCode}");
     }
   }

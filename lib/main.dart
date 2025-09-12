@@ -5,7 +5,7 @@ import 'package:flutter_application_1/Pages/dogPage.dart';
 import 'package:flutter_application_1/Pages/userListPage.dart';
 import 'package:flutter_application_1/Services/userService.dart';
 import 'package:flutter_application_1/routes.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -19,7 +19,8 @@ class MyApp extends StatelessWidget {
     final userService=  Userservice();
     return MaterialApp(
       title: "App mobile 3",
-      theme: ThemeData(colorSchemeSeed:  Colors.cyanAccent),
+      theme: ThemeData(colorSchemeSeed:  Colors.cyanAccent , fontFamily:  "Fonte"
+),
       initialRoute: AppRoutes.login,
       routes: {
         AppRoutes.home: (_) => const Homepage(),
